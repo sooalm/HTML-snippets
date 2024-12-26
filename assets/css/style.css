@@ -1,35 +1,33 @@
-header {
+.header {
    background-color: rgb(249, 0, 0);
    
 }
-footer{
+.footer{
     background-color: pink;
 }
 /* h1{
     text-align: center;
    padding-top: 15px;
 } */
-h2,h1{
-   
+.h{
     margin:0;
 }
-div {
+.div {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-a{
+.a{
     text-decoration: underline;
 }
-nav{
+.nav{
     background-color: orange;
 }
-article {
-    
+.article {
     background-color:rgb(114, 114, 244) ;
 }
 
-main { 
+.main { 
     background-color:greenyellow ;
     padding: 5px;
 }
