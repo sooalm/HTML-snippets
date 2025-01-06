@@ -1,0 +1,39 @@
+.accordion{
+    width:580px;
+    height:auto;
+    /* border:solid 1px; */
+    border-radius: 15px;
+    padding:10px;
+    margin:auto;
+    box-sizing: border-box;
+}
+.accordion__detail{
+    border:solid 1px;
+    border-color:rgb(38, 34, 34);
+    padding:10px;
+    border-radius:5px;
+    margin-bottom:5px;
+}
+.details__summary::-webkit-details-marker,
+.details__summary::marker {
+ display: none; 
+ content: "";
+}
+.accordion__detail:last-child .details__item {
+    margin-bottom: 0;
+    color:purple;
+}
+.details__item{
+    margin-bottom:0px;
+}
+.vector{
+    width:40px;
+    height:30px;
+    position:absolute;
+    margin-left:67%;
+    margin-top:1%;
+    z-index: -1;
+}
+.accordion__detail[open]{
+    color:red;
+}

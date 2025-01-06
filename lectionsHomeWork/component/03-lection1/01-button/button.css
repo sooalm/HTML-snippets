@@ -1,0 +1,66 @@
+:root{
+    --button-color:rgb(66, 19, 236);
+    --button-color-alt:rgb(255, 255, 255);
+    --button-border-width:1px;
+}
+/* ---------- button ----------*/
+.button{
+    border-radius:10px;
+    padding: 15px 40px;
+    width:182px; 
+    height:48px;
+    color: white;
+    left:640px;
+    /* box-sizing: border-box; */
+    /* opacity:0.5; */
+}
+.button:disabled{
+    opacity: 0.6; /* Прозрачность кнопки */
+    pointer-events: none; /* Кнопка не реагирует на события мыши */
+}
+.button:active {
+    box-shadow: 2px 2px 5px #fc894d;
+    cursor:wait ;
+  }
+.button--style{
+    background-color: var( --button-color);
+    border-width: var(--button-border-width);
+}
+.button--style_alt{
+    background-color: var(--button-color-alt);
+    border-width: var(--button-border-width);
+    color:black;
+}
+/* ---------- hover ----------*/
+.button--style_hover{
+    background-color:  var( --button-color);
+    border-width: var(--button-border-width);
+    cursor:pointer;
+}
+.button--style_alt_hover{
+    background-color: var(--button-color-alt);
+    border-width: var(--button-border-width);
+    cursor:pointer;
+    color:black;
+}
+.button--style_hover:hover{
+    transition:1s; 
+    background-color: rgb(64, 62, 159);
+}
+.button--style_alt_hover:hover{
+    transition:1s;
+    background-color: rgb(213, 213, 213);
+    border:bold;
+}
+/* ---------- not hover ----------*/
+.button--style_hover:not(:hover){
+    transition: 1.5s; 
+}
+.button--style_alt_hover:not(:hover){
+    transition: 1.5s; 
+}
+/* ---------- not button ---------- */
+.main{
+    width: 60%; /* Ширина основного контента */  
+    margin: auto; /* Центрируем основной контент */  
+}
