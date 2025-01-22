@@ -1,2 +1,19 @@
 @import "normalize.css";
 @import "style.css";
+@import "card.css";
+@import "page.css";
+@import "container.css";
+@import "preview.css";
+@import "/components/page/cards/tooltip.css";
+@import "/components/page/cards/calendar.css";
+@import "/components/page/cards/histogram.css";
+@import "/components/page/cards/modal.css";
+
+body{
+    font-family:'Roboto', sans-serif;
+    margin:0;
+}
+
+html, body{
+    height:100%;
+}

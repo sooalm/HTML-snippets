@@ -1,9 +1,18 @@
+
 .header {
-   background-color: rgb(249, 0, 0);
-   
+   line-height:300%; 
+   background-color: #FFFFFF;;
+   border:0.5px solid #c6c1c1;
+}
+.header_svg{
+    margin-top:5vh;
+}
+.footer div{
+    /* background-color: #FFFFFF; */
+    text-align:center;
 }
 .footer{
-    background-color: pink;
+    flex-grow:1;background-color: #FFFFFF;
 }
 /* h1{
     text-align: center;
@@ -19,15 +28,19 @@
 }
 .a{
     text-decoration: underline;
+    /* font-family:serif; */
+    font-size:1.5em;
 }
 .nav{
-    background-color: orange;
+    background-color: #FFFFFF;
 }
 .article {
     background-color:rgb(114, 114, 244) ;
 }
-
 .main { 
-    background-color:greenyellow ;
+    background-color:#FFFFFF;
     padding: 5px;
+}
+.a+.a{
+    margin-left:30px;
 }

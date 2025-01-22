@@ -1,0 +1,58 @@
+.histogram{
+box-sizing: border-box;/*попробовать убрать позже*/
+width: 354px;
+height: 185px;
+left: 536px;
+top: 4657px;
+border:1px solid #ACB5BD;
+background: #FFFFFF;
+border-radius: 15px;
+}
+
+
+.histogram__block{
+    display:flex; 
+    flex-direction: row; 
+    gap:3px; 
+    margin-top:100px;
+
+    justify-content: center;
+    align-items: flex-end; 
+}
+.span_block{
+    position:absolute;
+    margin-left:10px;
+}
+.span_block_1{
+    position:absolute;
+    margin-top:8px;
+    margin-left:280px;
+}
+.miniRectangles{
+    width:9px;
+    background-color: blue;
+}
+.rectangle_min{
+    height:11px;
+}
+.rectangle_max{
+    height:50px;
+}
+.rectangle_avg{
+    height:30px;
+}
+
+
+
+/* box-sizing: border-box;
+
+position: absolute;
+width: 354px;
+height: 185px;
+left: 536px;
+top: 4657px;
+
+background: #FFFFFF;
+/* Gray 3 */
+/* border: 1px solid #ACB5BD;
+border-radius: 8px; */ 

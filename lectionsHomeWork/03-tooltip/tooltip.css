@@ -1,0 +1,41 @@
+
+.tooltip{
+    /* border:5px solid purple; */
+    margin-left:50px;
+    margin-top:100px;
+    display:inline-block;
+    position: relative;
+}
+.tooltip__trigger{
+    /* border:5px solid red; */
+}
+.tooltip__bubble{
+    position:absolute;
+    
+    padding:10px 20px;
+    border:1px solid black;
+    border-radius: 10px;
+    background-color:dimgrey;
+    color:white;
+    
+    top:calc(100% + 2px);
+    left:50%;
+    transform: translateX(-50%);
+
+    /* display: none; */
+}
+
+.tooltip__bubble::before{
+    content:'';
+    border:8px solid transparent ;
+    border-bottom:6px solid black;
+    left:50%;
+    transform: translateX(-50%);
+    bottom:100%;
+    
+    position:absolute;
+}
+/*  */
+.tooltip__trigger:hover + .tooltip__bubble{
+    display:block;
+}

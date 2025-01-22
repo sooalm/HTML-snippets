@@ -1,0 +1,61 @@
+.skeleton{
+/* position: absolute; */
+width: 579px;
+height: 192px;
+/* left: 536px;*/
+top: 5074px; 
+border:2px solid rgb(0, 0, 0);
+border-radius: 15px;
+/* background-color:rgb(170, 156, 234); */
+background-color:#b4b2b2; 
+overflow: hidden;
+}
+
+.container{
+height:130px;
+width:515px;
+
+display:flex;
+/* flex-direction: column; */
+flex-wrap:wrap;
+/* background:red; */
+
+}
+.avatar{
+width:64px;
+height:64px;
+
+/* position:absolute; */
+margin:10px 20px;
+
+border:1px solid black;
+border-radius:50%;
+background:  linear-gradient(92.51deg, #DDE2E5 6.44%, #E2E6E8 38.47%, #F3F5F5 56.48%, #E3E7EA 77.5%, #DDE2E5 102.52%);
+}
+
+.gradient{
+height: 20px;
+background:  linear-gradient(92.51deg, #DDE2E5 6.44%, #E2E6E8 38.47%, #F3F5F5 56.48%, #E3E7EA 77.5%, #DDE2E5 102.52%);
+margin-left:20px;
+margin-top:auto;
+}
+.gradient--name{
+    width: 172px;
+   
+    margin-left:100px;
+    margin-top:10px;
+}
+.gradient--description{
+    width: 257px;
+    margin-left:100px;
+    margin-top:10px;
+}
+.gradient--title{
+    width: 515px;
+    margin-top:30px;
+}
+.gradient--about{
+    width: 475px; 
+    margin-top:10px;
+}
+
