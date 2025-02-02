@@ -24,20 +24,26 @@
                                 </svg>
                 </div>                                                      
                 <h1 class="h">Reusable component library</h1>
-            <!-- </div>  -->
-            <!-- <nav class="nav">
+             <!-- </div>  -->
+             <!-- <nav class="nav">
                     <a href="" class="a">All components</a>    
                     <a class="a">Elements</a>
                     <a class="a">Containers</a>
                     <a class="a">Templates</a>
-            </nav> -->
+             </nav> -->
             <div class="tabs">
-                <nav class="tabs__items">
-                    <a href="#tab_01" class="tabs__item"><span>All components</span></a>
-                    <a href="#tab_02" class="tabs__item"><span>Elements</span></a>
-                    <a href="#tab_03" class="tabs__item"><span>Containers</span></a>
-                    <a href="#tab_04" class="tabs__item"><span>Templates</span></a>
-                </nav>
+               
+                    <!-- <input type="radio" id="#all-tab" class="" name="tab"  checked> -->
+                    <!-- <input type="radio" id="#elements-tab" class="" name="tab"> -->
+                    <!-- <input type="radio" id="#containers-tab" class="" name="tab"> -->
+                    <!-- <input type="radio" id="#templates-tab" class="" name="tab"> -->
+              
+                <div class="tabs__scroller">
+                  <label for="#all-tab" class="">All components</label>
+                  <label for="#elements-tab" class="">Elements</label>
+                  <label for="#containers-tab" class="">Containers</label>
+                  <label for="#templates-tab" class="">Templates</label>
+                </div>
             </div>
     </div> 
         </header>
@@ -46,6 +52,7 @@
         <main class="page__main">
             <div class="preview">
                 <div class="container">
+                    <input type="radio" id="#all-tab" class="tab" name="tab"  checked>
                     <div class="preview__inner">
                         <div class="card preview__card">
                             <div class="tooltip ">
@@ -223,6 +230,100 @@
                             </div>
                             <div class="card__description"><p ><b>Modal</b><br>Container</p> </div> 
                         </div>
+                        <div class="card preview__card">
+                            <div class="histogram ">
+                                <div class="span_block">
+                                    <span>Total orders</span><br>
+                                    <span>50254</span>
+                                </div>
+                                <div class="span_block_1">
+                                    <a href="#">View all.</a>
+                                </div>
+                                    <div class="histogram__block">
+                                        <div class="miniRectangles rectangle_max"></div>
+                                        <div class="miniRectangles rectangle_avg"></div>
+                                        <div class="miniRectangles rectangle_max"></div>
+                                        <div class="miniRectangles rectangle_min"></div>
+                                        <div class="miniRectangles rectangle_min"></div>
+                                        <div class="miniRectangles rectangle_max"></div>
+                                        <div class="miniRectangles rectangle_max"></div>
+                                        <div class="miniRectangles rectangle_avg"></div>
+                                        <div class="miniRectangles rectangle_max"></div>
+                                        <div class="miniRectangles rectangle_min"></div>
+                                        <div class="miniRectangles rectangle_avg"></div>
+                                        <div class="miniRectangles rectangle_max"></div>
+                                        <div class="miniRectangles rectangle_min"></div>
+                                        <div class="miniRectangles rectangle_avg"></div>
+                                        <div class="miniRectangles rectangle_max"></div>
+                                        <div class="miniRectangles rectangle_min"></div>
+                                    </div>
+                            </div> <div class="card__description"><p ><b>Histogram</b><br>Container</p> </div> 
+                        </div>
+                        <div class="card preview__card">
+                            <div class="div__image">
+                                <img class="img" src="/assets/images/forest_400.jpg" alt="Картинка"
+                                srcset="/assets/images/avatar.png 160w"
+                             sizes="(max-width:600px) 200px,(max-width: 980px) 400px"/>
+                               </div>   <div class="card__description"><p ><b>Avatar</b><br>Container</p> </div> 
+                        </div>
+                     </div>
+                   
+                    <input type="radio" id="#elements-tab" class="tab" name="tab">
+                    <div class="preview__inner__elements">
+                        <div class="card preview__card">  
+                            <div class="container__form">
+                                        <div class="flex__container">
+                                            <label class="checkbox">
+                                                <input class ="checkbox__input" type="checkbox" >
+                                                <div class="checkbox__state">
+                                                    <div class="checkbox__control">
+                                                        <svg class="checkbox__icon" width="15" height="13" viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M1.5 7.5L5 11L13 2" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            </svg>
+                                                            
+                                                        </div>
+                                                        <div class="checkbox__title">Default</div>
+                                                </div>
+                                            </label>
+                                        
+                                            <label class="checkbox">
+                                                <input class ="checkbox__input" type="checkbox" checked>
+                                                <div class="checkbox__state">
+                                                    <div class="checkbox__control">
+                                                        <svg class="checkbox__icon" width="15" height="13" viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M1.5 7.5L5 11L13 2" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            </svg>
+                                                            
+                                                        </div>
+                                                        <div class="checkbox__title">Checked</div>
+                                                </div>
+                                            </label>
+                                        
+                                            <label class="radio-checkbox--disabled">
+                                                <input class ="checkbox__input" type="checkbox" disabled>
+                                                <div class="checkbox__state">
+                                                    <div class="checkbox__control">
+                                                        <svg class="checkbox__icon" width="15" height="13" viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path fill="currentColor d="M1.5 7.5L5 11L13 2" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            </svg>
+                                                            
+                                                        </div>
+                                                        <div class="checkbox__title">Disabled</div>
+                                                </div>
+                                            </label>
+                                            </div>
+                                            <div class="card__description"><p ><b>Custom form Elements</b><br>Container</p> </div> 
+                                        </div>
+                    </div>
+                    </div>
+                    <input type="radio" id="#containers-tab" class="tab" name="tab">
+                    <div class="preview__inner__containers">
+                        <div class="card preview__card"> </div>
+                        <div class="card preview__card"> </div>
+                        <div class="card preview__card"> </div>
+                    </div>
+                    <input type="radio" id="#templates-tab" class="tab" name="tab">
+                    <div class="preview__inner__templates">
                         <div class="card preview__card">
                             <div class="histogram ">
                                 <div class="span_block">

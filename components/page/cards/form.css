@@ -1,6 +1,6 @@
 @import "/components/my-component/radio.css";
 @import "/components/my-component/checkbox.css";
-@import "/components/my-component/toggle.css";
+
 
 .container__form{
     display:flex;

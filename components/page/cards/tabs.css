@@ -1,7 +1,50 @@
-.tabs{
-    background-color: var(--main-element-color);
-}
+
+
 .tabs__items{
     display:flex;
     gap:10px;
 }
+.tab{
+   position: absolute;
+   /* left:1vw; */
+     opacity: 0;
+    left:-100vw;
+}
+
+.preview__inner{
+    display: none;
+    }
+    input[id="#all-tab"]:checked ~ .preview__inner{
+        display:flex;
+        /* background-color: var(--main-element-color); */
+    }
+    
+    .preview__inner__elements{
+        display: none;
+        }
+        input[id="#elements-tab"]:checked ~ .preview__inner__elements{
+            /* justify-self: center;  */
+            display:flex;
+            flex-wrap:wrap;
+            gap:30px;
+        }
+        .preview__inner__containers{
+            display: none;
+            }
+            input[id="#containers-tab"]:checked ~ .preview__inner__containers{
+                /* justify-self: center;  */
+                display:flex;
+                flex-wrap:wrap;
+                gap:30px;
+            }
+
+        .preview__inner__templates{
+            display: none;
+            }
+            input[id="#templates-tab"]:checked ~ .preview__inner__templates{
+                /* justify-self: center;  */
+                display:flex;
+                flex-wrap:wrap;
+                gap:30px;
+            }
+           
