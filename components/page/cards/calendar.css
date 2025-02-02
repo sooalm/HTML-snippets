@@ -42,10 +42,51 @@
     color:#90A0B7;
     width: 2em;
 }
-/* .border{
-    border: solid 1px;
+/* ///////////////////////////////////////////////////////////////// */
+@media (max-width:980px){
+    .calendar{
+        width: 200px;
+        height: 180px;       
+    }
+    .calendar__title{
+        font-size: 1em; 
+        margin:0.5em;
+    }
+    
+    .calendar__wrapper{
+        font-size: 0.8em; 
+    }
+    .calendar__inner{ 
+        column-gap: .1em;
+    }
+    .calendar__item{
+      width: 1.5em;
+      height: 1.5em;
+    }
+    .calendar__item_day{
+        width: 2em;
+    }
 }
-  
-.red{
-    border-color: red;
-} */
+@media (max-width:600px){
+    .calendar{
+        width: 120px;
+        height: 120px;       
+    }
+    .calendar__title{
+        font-size: 0.5em; 
+        margin:0.5em;
+    }
+    .calendar__wrapper{
+        font-size: 0.5em; 
+    }
+    .calendar__inner{ 
+        column-gap: .1em;
+    }
+    .calendar__item{
+      width: 1.5em;
+      height: 1.5em;
+    }
+    .calendar__item_day{
+        width: 2em;
+    }
+}

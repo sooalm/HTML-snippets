@@ -8,7 +8,9 @@
 @import "/components/page/cards/calendar.css";
 @import "/components/page/cards/histogram.css";
 @import "/components/page/cards/modal.css";
-
+@import "/components/page/cards/pictures.css";
+@import "/components/page/cards/form.css";
+@import "/components/page/cards/tabs.css";
 body{
     font-family:'Roboto', sans-serif;
     margin:0;
@@ -17,3 +19,6 @@ body{
 html, body{
     height:100%;
 }
+:root {
+    --main-element-color:#FFFFFF;
+  }

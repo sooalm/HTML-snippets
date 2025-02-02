@@ -1,0 +1,14 @@
+@import "radio.css";
+@import "checkbox.css";
+@import "toggle.css";
+
+.container__form{
+    display:flex;
+    flex-direction: row;
+    gap:2em;
+
+    border: 1px solid grey;
+    width:400px;
+    justify-content: center;
+    
+}

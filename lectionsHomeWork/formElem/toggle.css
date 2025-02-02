@@ -1,0 +1,59 @@
+.toggle{
+    display:inline-flex;
+  
+}
+.toggle__input{
+    position: absolute;
+    opacity: 0;
+    left:-100vw;
+}
+.toggle__state{
+    display:flex;
+    gap:12px;
+    align-items: center;
+}
+.toggle__control{
+    width:48px;
+    height:24px;
+    border:3px solid #DDE2E5;
+    border-radius:15px;
+    background-color: grey;
+    /* display:flex;
+    align-items:center; */
+  
+}
+
+.toggle__title{
+    color:#495057;
+    font-family:Inter;
+    font-size: 16px;
+    font-style:normal;
+    font-weight:400;
+    line-height:24px;
+}
+.toggle__input:checked  ~ .toggle__state .toggle__control .toggle__icon  {
+    position:absolute;
+    transform: translateX(24px);
+}
+.toggle__input:checked ~ .toggle__state .toggle__control{
+    background:#4263EB;
+    border-color:#4263eb;
+}
+.toggle__input:focus ~ .toggle__state .toggle__title {
+    text-decoration: underline;
+}
+.flex__container{
+    display:flex;
+    flex-direction: column;
+    gap:1em;
+}
+.radio-checkbox--disabled{
+    opacity:0.5;
+}
+.radio-checkbox-disabled .toggle__state .toggle__control{
+    background-color: grey;
+    border-color:grey; 
+}
+.radio-checkbox--disabled .toggle__icon{
+    color:grey;
+}

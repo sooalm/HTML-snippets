@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="input.css">
+</head>
+<body>
+    <div class="grid__container">
+        <label class="checkbox">
+            <input class ="checkbox__input checkbox__input--empty" type="input" placeholder="   Placeholder" >
+           
+                    <!-- svg -->
+                        
+                  
+                    <div class="checkbox__title">Default</div>
+            
+        </label>
+    
+        <label class="checkbox">
+            <input class ="checkbox__input" type="input" placeholder="  Success"  >
+    
+            
+                    <!-- svg -->
+                    <svg class= "checkbox__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M15.663 3.77342C13.8902 2.98352 11.9096 2.78783 10.0166 3.21555C8.12351 3.64326 6.41942 4.67145 5.15845 6.14678C3.89749 7.62211 3.14721 9.46552 3.01951 11.4021C2.89181 13.3387 3.39354 15.2646 4.44987 16.8928C5.50619 18.5209 7.06051 19.764 8.88102 20.4365C10.7015 21.1091 12.6907 21.1752 14.5518 20.6249C16.413 20.0746 18.0464 18.9375 19.2084 17.3831C20.3705 15.8286 20.9989 13.9402 21 11.9994V11.08C21 10.5277 21.4477 10.08 22 10.08C22.5523 10.08 23 10.5277 23 11.08V12C22.9986 14.3721 22.2306 16.6807 20.8103 18.5806C19.39 20.4804 17.3936 21.8703 15.1189 22.5428C12.8442 23.2154 10.413 23.1346 8.18792 22.3126C5.96285 21.4906 4.06312 19.9713 2.77206 17.9813C1.48099 15.9914 0.86777 13.6374 1.02384 11.2705C1.17992 8.90358 2.09693 6.65052 3.63811 4.84734C5.17929 3.04416 7.26206 1.78748 9.57581 1.26472C11.8896 0.74196 14.3103 0.981129 16.477 1.94656C16.9815 2.17134 17.2082 2.76252 16.9834 3.26699C16.7587 3.77146 16.1675 3.9982 15.663 3.77342Z" fill="#212429"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M22.7068 3.29254C23.0975 3.68287 23.0978 4.31603 22.7075 4.70675L12.7075 14.7168C12.52 14.9044 12.2656 15.0099 12.0002 15.01C11.7349 15.0101 11.4805 14.9047 11.2929 14.7171L8.29289 11.7171C7.90237 11.3266 7.90237 10.6934 8.29289 10.3029C8.68342 9.91237 9.31658 9.91237 9.70711 10.3029L11.9996 12.5954L21.2925 3.29325C21.6829 2.90253 22.316 2.90221 22.7068 3.29254Z" fill="#212429"/>
+                        </svg>
+                        
+                   
+                    <div class="checkbox__title">Success</div>
+            
+        </label>
+
+        <label class="checkbox">
+            <input class ="checkbox__input" type="input" placeholder=""  autofocus >
+                    <!-- svg -->
+                    <div class="checkbox__title">Focus</div>
+        </label>
+
+        <label class="checkbox">
+            <input class ="checkbox__input checkbox__input--error" type="input" placeholder="Invalid data" >
+          
+                    <!-- svg -->
+                    <svg  class= "checkbox__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10.29 3.86002L1.82002 18C1.64539 18.3024 1.55299 18.6453 1.55201 18.9945C1.55103 19.3438 1.64151 19.6872 1.81445 19.9905C1.98738 20.2939 2.23675 20.5468 2.53773 20.7239C2.83871 20.901 3.18082 20.9962 3.53002 21H20.47C20.8192 20.9962 21.1613 20.901 21.4623 20.7239C21.7633 20.5468 22.0127 20.2939 22.1856 19.9905C22.3585 19.6872 22.449 19.3438 22.448 18.9945C22.4471 18.6453 22.3547 18.3024 22.18 18L13.71 3.86002C13.5318 3.56613 13.2807 3.32314 12.9812 3.15451C12.6817 2.98587 12.3438 2.89728 12 2.89728C11.6563 2.89728 11.3184 2.98587 11.0188 3.15451C10.7193 3.32314 10.4683 3.56613 10.29 3.86002V3.86002Z" stroke="#F03D3E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M12 9V13" stroke="#F03D3E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M12 16V16.5" stroke="#F03D3E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                        
+                    <div class="checkbox__title checkbox__title">Error</div>
+        
+        </label>
+
+        <label class="checkbox">
+            <!-- <input class ="checkbox__input" type="input" placeholder="" > -->
+          
+                    <!-- svg -->
+                    <select class ="checkbox__input" name="select">
+           
+                        <option value="value1">Значение 1</option>
+                        <option value="value2" selected>Значение 2</option>
+                        <option value="value3">Значение 3</option>
+                      </select>  
+                        
+                    <div class="checkbox__title checkbox__title">Select</div>
+        
+        </label>
+
+    
+        </div>
+        
+       
+    </body>
+    </html>

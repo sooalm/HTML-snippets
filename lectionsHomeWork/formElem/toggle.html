@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="toggle.css">
+</head>
+<body>
+    <div class="flex__container">
+        <label class="toggle">
+            <input class ="toggle__input" type="checkbox" >
+            <div class="toggle__state">
+                <div class="toggle__control">
+                    <svg class="toggle__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="24" height="24" rx="12" fill="white"/>
+                        </svg>
+                    </div>
+                    <div class="toggle__title">Default</div>
+            </div>
+        </label>
+    
+        <label class="toggle">
+            <input class ="toggle__input" type="checkbox" checked>
+            <div class="toggle__state">
+                <div class="toggle__control">
+                        <svg  class="toggle__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="24" height="24" rx="12" fill="white"/>
+                        </svg>
+
+                    </div>
+                    <div class="toggle__title">Checked</div>
+            </div>
+        </label>
+    
+        <label class="radio-checkbox--disabled">
+            <input class ="toggle__input" type="checkbox" disabled>
+            <div class="toggle__state">
+                <div class="toggle__control">
+                    <svg class="toggle__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="24" height="24" rx="12" fill="white"/>
+                        </svg>
+                        
+                    </div>
+                    <div class="toggle__title">Disabled</div>
+            </div>
+        </label>
+        </div>
+</body>
+</html>

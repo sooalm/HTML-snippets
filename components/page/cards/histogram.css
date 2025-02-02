@@ -1,17 +1,15 @@
 .histogram{
-box-sizing: border-box;/*попробовать убрать позже*/
-width: 324px;
-height: 165px;
-/* left: 536px;
-top: 4657px; */
-border:1px solid #ACB5BD;
-background: #FFFFFF;
-border-radius: 15px;
+    box-sizing: border-box;/*попробовать убрать позже*/
+    width: 324px;
+    height: 165px;
+    /* left: 536px;
+    top: 4657px; */
+    border:1px solid #ACB5BD;
+    background: var(--main-element-color);
+    border-radius: 15px;
 
-position:relative;
+    position:relative;
 }
-
-
 .histogram__block{
     display:flex; 
     flex-direction: row; 
@@ -44,7 +42,61 @@ position:relative;
     height:30px;
 }
 
-
+/* ///////////////////////////////////////////////////////////////// */
+@media (max-width:980px){
+    .histogram{
+        width: 240px;
+        height: 140px;
+        }
+        .histogram__block{
+            gap:0.2em; 
+            margin-top:5em;
+            margin-left:0.3em;
+            max-width:230px;
+        }
+        .span_block{
+            margin-top:0.5em;
+            margin-left:1em;
+        }
+        .span_block_1{
+            margin-top:0.5em;
+            margin-left:10em;
+        }
+}
+@media (max-width:600px){
+    .histogram{
+        width: 140px;
+        height: 100px;
+        }
+        .histogram__block{
+            gap:0.1em; 
+            margin-top:2.8em;
+            margin-left:0.3em;
+            max-width:130px;
+        }
+        .span_block{
+            font-size:0.5em;
+            margin-top:0.5em;
+            margin-left:1em;
+        }
+        .span_block_1{
+            font-size:0.5em;
+            margin-top:0.5em;
+            margin-left:13em;
+        }
+        .miniRectangles{
+            width:1em;
+        }
+        .rectangle_min{
+            height:0.5em;
+        }
+        .rectangle_max{
+            height:3em;
+        }
+        .rectangle_avg{
+            height:2em;
+        }
+}
 
 /* box-sizing: border-box;
 

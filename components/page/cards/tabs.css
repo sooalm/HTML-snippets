@@ -1,0 +1,7 @@
+.tabs{
+    background-color: var(--main-element-color);
+}
+.tabs__items{
+    display:flex;
+    gap:10px;
+}

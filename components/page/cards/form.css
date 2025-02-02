@@ -1,0 +1,19 @@
+@import "/components/my-component/radio.css";
+@import "/components/my-component/checkbox.css";
+@import "/components/my-component/toggle.css";
+
+.container__form{
+    display:flex;
+    flex-direction: row;
+    gap:2em;
+
+    /* border: 1px solid grey; */
+    width:250px;
+    justify-content: center;
+   
+}
+@media(max-width:600px){
+    .container__form{
+        transform: scale(0.5); 
+    }
+}

@@ -4,21 +4,9 @@
     background-color: black;
     
     display:flex;
-    flex-direction: column;
-    /* border:5px solid black; */
-    
+    flex-direction: column;    
 }
 .page__main{
-    /* flex-grow: 1; */
-    /* height:3000px;  */
-   
-    /* border:20px solid yellow;  */
-
-/*для вариант на позишнах */
-    /* position:relative;  
-    min-height:800px;
-    min-width:1200px; */
-
     display:flex;
     flex-grow: 1;
 }
