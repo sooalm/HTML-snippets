@@ -38,11 +38,7 @@
 .checkbox__input:focus ~ .checkbox__state .checkbox__title {
     text-decoration: underline;
 }
-.flex__container{
-    display:flex;
-    flex-direction: column;
-    gap:1em;
-}
+
 .radio-checkbox--disabled{
     opacity:0.5;
 }

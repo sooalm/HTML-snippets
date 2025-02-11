@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Tooltip</title>
+      <link rel="stylesheet" href="/assets/css/main.css">
+      <script src="/components/page/pages_js/buttonForPages.js"></script>
+   </head>
+   <body>
+      <div class="page">
+        <header class="header">
+            <div class="header_svg">
+               <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect width="30" height="30" fill="#212429"/>
+               </svg>
+               <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect width="32" height="32" rx="16" fill="#212429"/>
+               </svg>
+               <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M0 0L32 32H0V0Z" fill="#212429"/>
+               </svg>
+            </div>
+            <svg id ="sideButt" class="sidebar__button" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M2 12C2 11.4477 2.44772 11 3 11H21C21.5523 11 22 11.4477 22 12C22 12.5523 21.5523 13 21 13H3C2.44772 13 2 12.5523 2 12Z" fill="currentColor"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M2 6C2 5.44772 2.44772 5 3 5H21C21.5523 5 22 5.44772 22 6C22 6.55228 21.5523 7 21 7H3C2.44772 7 2 6.55228 2 6Z" fill="currentColor"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M2 18C2 17.4477 2.44772 17 3 17H21C21.5523 17 22 17.4477 22 18C22 18.5523 21.5523 19 21 19H3C2.44772 19 2 18.5523 2 18Z" fill="currentColor"/>
+                </svg>
+         </header>
+         <main class="page__main page--100">
+            <div class="preview preview--padding_page20">
+               <div id ="sidebar" class="sidebar sidebar--on_off">
+                  <span class="sidebar__name"> Components</span>
+                  <div class="sidebar__block">
+                    <a class="sidebar__a" href="Tooltip_page.html">Tooltip</a>
+                    <a class="sidebar__a" href="CustomFE_page.html">Custom form elements</a>
+                    <a class="sidebar__a" href="Calendar_page.html">Calendar</a>
+                    <a class="sidebar__a" href="Modal_page.html">Modal</a>
+                    <a class="sidebar__a" href="Histogram_page.html">Histogram</a>
+                    <a class="sidebar__a" href="Avatar_page.html">Avatar</a>
+                    <a class="sidebar__a sidebar__a--notActive">Buttons</a>
+                    <a class="sidebar__a sidebar__a--notActive">Temp Link</a>
+                    <a class="sidebar__a sidebar__a--notActive">Temp Link</a>
+                    <a class="sidebar__a" href="/../../index.html">Main page</a>
+                </div>     
+               </div>
+               <div class="preview__components_container">
+                  <div class="title_above_card">Custom form elements Container</div>
+                  <div class="card preview__card card--noShadow">
+                   
+                        <div class="container__form  ">
+                                    <div class="flex__container">
+                                        <label class="checkbox">
+                                            <input class ="checkbox__input" type="checkbox" >
+                                            <div class="checkbox__state">
+                                                <div class="checkbox__control">
+                                                    <svg class="checkbox__icon" width="15" height="13" viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M1.5 7.5L5 11L13 2" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        </svg>
+                                                        
+                                                    </div>
+                                                    <div class="checkbox__title">Default</div>
+                                            </div>
+                                        </label>
+                                    
+                                        <label class="checkbox">
+                                            <input class ="checkbox__input" type="checkbox" checked>
+                                            <div class="checkbox__state">
+                                                <div class="checkbox__control">
+                                                    <svg class="checkbox__icon" width="15" height="13" viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M1.5 7.5L5 11L13 2" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        </svg>
+                                                        
+                                                    </div>
+                                                    <div class="checkbox__title">Checked</div>
+                                            </div>
+                                        </label>
+                                    
+                                        <label class="radio-checkbox--disabled">
+                                            <input class ="checkbox__input" type="checkbox" disabled>
+                                            <div class="checkbox__state">
+                                                <div class="checkbox__control">
+                                                    <svg class="checkbox__icon" width="15" height="13" viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path fill="currentColor d="M1.5 7.5L5 11L13 2" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        </svg>
+                                                        
+                                                    </div>
+                                                    <div class="checkbox__title">Disabled</div>
+                                            </div>
+                                        </label>
+                                        </div>
+                                        <!-- /////////////////////////////////////////////////////////////////////////////////////////////// -->
+                                    <div class="flex__container">
+                                        <label class="radio">
+                                            <input class ="radio__input" type="radio" name="radio">
+                                            <div class="radio__state">
+                                                <div class="radio__control">
+                                                    <svg class="radio__icon" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <rect width="18" height="18" rx="9" fill="currentColor"/>
+                                                        </svg>  
+                                                    </div>
+                                                    <div class="radio__title">Default</div>
+                                            </div>  
+                                        </label>
+                                        
+                                        <label class="radio">
+                                            <input class ="radio__input" type="radio" name="radio" checked>
+                                            <div class="radio__state">
+                                                <div class="radio__control">
+                                                    <svg class="radio__icon" width="18" height="18" viewBox="0 0 18 18" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                                        <rect width="18" height="18" rx="9" fill="currentColor"//>
+                                                        </svg>  
+                                                    </div>
+                                                    <div class="radio__title">Selected</div>
+                                            </div>
+                                        </label>
+                                    
+                                        <label class="radio-checkbox--disabled">
+                                            <input class ="radio__input" type="radio" name="radio" disabled>
+                                            <div class="radio__state">
+                                                <div class="radio__control">
+                                                    <svg class="radio__icon" width="18" height="18" viewBox="0 0 18 18" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                                        <rect width="18" height="18" rx="9" fill="currentColor"//>
+                                                        </svg>  
+                                                    </div>
+                                                    <div class="radio__title">Disabled</div>
+                                            </div>
+                                        </label>
+                                    </div>
+                                    <!-- /////////////////////////////////////////////////////////////////////////////////////////////// -->
+                                   
+                        </div>
+                  
+                        
+                    
+                  </div>
+                  <div class="buttons_group">
+                     <button  id="html-tab" class="button_switch --underlined"> HTML</button>
+                     <button  id="css-tab" class="button_switch"> CSS</button>
+                  </div>
+                  <div class="text" id="html-text">
+                     <pre> <code>
+   
+&lt;div class=&quot;container__form  &quot;&gt;
+&lt;div class=&quot;flex__container&quot;&gt;
+    &lt;label class=&quot;checkbox&quot;&gt;
+        &lt;input class =&quot;checkbox__input&quot; type=&quot;checkbox&quot; &gt;
+        &lt;div class=&quot;checkbox__state&quot;&gt;
+            &lt;div class=&quot;checkbox__control&quot;&gt;
+                &lt;svg class=&quot;checkbox__icon&quot; width=&quot;15&quot; height=&quot;13&quot; viewBox=&quot;0 0 15 13&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
+                    &lt;path d=&quot;M1.5 7.5L5 11L13 2&quot; stroke=&quot;white&quot; stroke-width=&quot;3&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot;/&gt;
+                    &lt;/svg&gt;
+                    
+                &lt;/div&gt;
+                &lt;div class=&quot;checkbox__title&quot;&gt;Default&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/label&gt;
+
+    &lt;label class=&quot;checkbox&quot;&gt;
+        &lt;input class =&quot;checkbox__input&quot; type=&quot;checkbox&quot; checked&gt;
+        &lt;div class=&quot;checkbox__state&quot;&gt;
+            &lt;div class=&quot;checkbox__control&quot;&gt;
+                &lt;svg class=&quot;checkbox__icon&quot; width=&quot;15&quot; height=&quot;13&quot; viewBox=&quot;0 0 15 13&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
+                    &lt;path d=&quot;M1.5 7.5L5 11L13 2&quot; stroke=&quot;white&quot; stroke-width=&quot;3&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot;/&gt;
+                    &lt;/svg&gt;
+                    
+                &lt;/div&gt;
+                &lt;div class=&quot;checkbox__title&quot;&gt;Checked&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/label&gt;
+
+    &lt;label class=&quot;radio-checkbox--disabled&quot;&gt;
+        &lt;input class =&quot;checkbox__input&quot; type=&quot;checkbox&quot; disabled&gt;
+        &lt;div class=&quot;checkbox__state&quot;&gt;
+            &lt;div class=&quot;checkbox__control&quot;&gt;
+                &lt;svg class=&quot;checkbox__icon&quot; width=&quot;15&quot; height=&quot;13&quot; viewBox=&quot;0 0 15 13&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
+                    &lt;path fill=&quot;currentColor d=&quot;M1.5 7.5L5 11L13 2&quot; stroke=&quot;white&quot; stroke-width=&quot;3&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot;/&gt;
+                    &lt;/svg&gt;
+                    
+                &lt;/div&gt;
+                &lt;div class=&quot;checkbox__title&quot;&gt;Disabled&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/label&gt;
+    &lt;/div&gt;
+&lt;div class=&quot;flex__container&quot;&gt;
+    &lt;label class=&quot;radio&quot;&gt;
+        &lt;input class =&quot;radio__input&quot; type=&quot;radio&quot; name=&quot;radio&quot;&gt;
+        &lt;div class=&quot;radio__state&quot;&gt;
+            &lt;div class=&quot;radio__control&quot;&gt;
+                &lt;svg class=&quot;radio__icon&quot; width=&quot;18&quot; height=&quot;18&quot; viewBox=&quot;0 0 18 18&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
+                    &lt;rect width=&quot;18&quot; height=&quot;18&quot; rx=&quot;9&quot; fill=&quot;currentColor&quot;/&gt;
+                    &lt;/svg&gt;  
+                &lt;/div&gt;
+                &lt;div class=&quot;radio__title&quot;&gt;Default&lt;/div&gt;
+        &lt;/div&gt;  
+    &lt;/label&gt;
+    
+    &lt;label class=&quot;radio&quot;&gt;
+        &lt;input class =&quot;radio__input&quot; type=&quot;radio&quot; name=&quot;radio&quot; checked&gt;
+        &lt;div class=&quot;radio__state&quot;&gt;
+            &lt;div class=&quot;radio__control&quot;&gt;
+                &lt;svg class=&quot;radio__icon&quot; width=&quot;18&quot; height=&quot;18&quot; viewBox=&quot;0 0 18 18&quot; fill=&quot;currentColor&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
+                    &lt;rect width=&quot;18&quot; height=&quot;18&quot; rx=&quot;9&quot; fill=&quot;currentColor&quot;//&gt;
+                    &lt;/svg&gt;  
+                &lt;/div&gt;
+                &lt;div class=&quot;radio__title&quot;&gt;Selected&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/label&gt;
+
+    &lt;label class=&quot;radio-checkbox--disabled&quot;&gt;
+        &lt;input class =&quot;radio__input&quot; type=&quot;radio&quot; name=&quot;radio&quot; disabled&gt;
+        &lt;div class=&quot;radio__state&quot;&gt;
+            &lt;div class=&quot;radio__control&quot;&gt;
+                &lt;svg class=&quot;radio__icon&quot; width=&quot;18&quot; height=&quot;18&quot; viewBox=&quot;0 0 18 18&quot; fill=&quot;currentColor&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
+                    &lt;rect width=&quot;18&quot; height=&quot;18&quot; rx=&quot;9&quot; fill=&quot;currentColor&quot;//&gt;
+                    &lt;/svg&gt;  
+                &lt;/div&gt;
+                &lt;div class=&quot;radio__title&quot;&gt;Disabled&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/label&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+                        </code></pre>
+                  </div>
+                  <div class="text  data-open" id="css-text">
+                     <pre> <code>
+.container__form{
+    display:flex;
+    flex-direction: row;
+    gap:2em;
+    width:250px;
+    justify-content: center;
+}
+.flex__container{
+    display:flex;
+    flex-direction: column;
+    gap:1em;
+}
+@media(max-width:600px){
+    .container__form{
+        transform: scale(0.6); 
+    }
+}
+                        </code></pre>
+                  </div>
+               </div>
+            </div>
+         </main>
+       
+      </div>
+   </body>
+</html>

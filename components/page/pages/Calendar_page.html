@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Tooltip</title>
+      <link rel="stylesheet" href="/assets/css/main.css">
+      <script src="/components/page/pages_js/buttonForPages.js"></script>
+   </head>
+   <body>
+      <div class="page">
+        <header class="header">
+            <div class="header_svg">
+               <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect width="30" height="30" fill="#212429"/>
+               </svg>
+               <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect width="32" height="32" rx="16" fill="#212429"/>
+               </svg>
+               <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M0 0L32 32H0V0Z" fill="#212429"/>
+               </svg>
+            </div>
+            <svg id ="sideButt" class="sidebar__button" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M2 12C2 11.4477 2.44772 11 3 11H21C21.5523 11 22 11.4477 22 12C22 12.5523 21.5523 13 21 13H3C2.44772 13 2 12.5523 2 12Z" fill="currentColor"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M2 6C2 5.44772 2.44772 5 3 5H21C21.5523 5 22 5.44772 22 6C22 6.55228 21.5523 7 21 7H3C2.44772 7 2 6.55228 2 6Z" fill="currentColor"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M2 18C2 17.4477 2.44772 17 3 17H21C21.5523 17 22 17.4477 22 18C22 18.5523 21.5523 19 21 19H3C2.44772 19 2 18.5523 2 18Z" fill="currentColor"/>
+                </svg>
+         </header>
+         <main class="page__main page--100">
+            <div class="preview preview--padding_page20">
+               <div id ="sidebar" class="sidebar sidebar--on_off">
+                  <span class="sidebar__name"> Components</span>
+                  <div class="sidebar__block">
+                    <a class="sidebar__a" href="Tooltip_page.html">Tooltip</a>
+                    <a class="sidebar__a" href="CustomFE_page.html">Custom form elements</a>
+                    <a class="sidebar__a" href="Calendar_page.html">Calendar</a>
+                    <a class="sidebar__a" href="Modal_page.html">Modal</a>
+                    <a class="sidebar__a" href="Histogram_page.html">Histogram</a>
+                    <a class="sidebar__a" href="Avatar_page.html">Avatar</a>
+                    <a class="sidebar__a sidebar__a--notActive">Buttons</a>
+                    <a class="sidebar__a sidebar__a--notActive">Temp Link</a>
+                    <a class="sidebar__a sidebar__a--notActive">Temp Link</a>
+                    <a class="sidebar__a" href="/../../index.html">Main page</a>
+                </div>     
+               </div>
+               <div class="preview__components_container">
+                  <div class="title_above_card">Calendar Container</div>
+                  <div class="card preview__card card--noShadow">
+                     <div class="calendar --scale0_75">
+                        <div class="calendar__title">October 2019</div>
+                        <div class="calendar__wrapper">
+                         <div class="calendar__inner">
+                             <span class="calendar__item calendar__item_day">Mon</span>
+                             <span class="calendar__item calendar__item_day">Tue</span>
+                             <span class="calendar__item calendar__item_day">Wed</span>
+                             <span class="calendar__item calendar__item_day">Thu</span>
+                             <span class="calendar__item calendar__item_day">Fri</span>
+                             <span class="calendar__item calendar__item_day">Sat</span>
+                             <span class="calendar__item calendar__item_day">Sun</span>
+                              
+                             <span class="calendar__item"></span>
+                             <span class="calendar__item"></span>
+                             <span class="calendar__item"></span>
+                             <span class="calendar__item"></span>
+                             <span class="calendar__item"></span>
+                 
+                             <span class="calendar__item">1</span>
+                             <span class="calendar__item">2</span>
+                             <span class="calendar__item">3</span>
+                             <span class="calendar__item">4</span>
+                             <span class="calendar__item">5</span>
+                             <span class="calendar__item">6</span>
+                             <span class="calendar__item">7</span>
+                             <span class="calendar__item">8</span>
+                             <span class="calendar__item">9</span>
+                             <span class="calendar__item">10</span>
+                             <span class="calendar__item">11</span>
+                             <span class="calendar__item">12</span>
+                             <span class="calendar__item">13</span>
+                             <span class="calendar__item">14</span>
+                             <span class="calendar__item">15</span>
+                             <span class="calendar__item">16</span>
+                             <span class="calendar__item">17</span>
+                             <span class="calendar__item">18</span>
+                             <span class="calendar__item">19</span>
+                             <span class="calendar__item">20</span>
+                             <span class="calendar__item">21</span>
+                             <span class="calendar__item">22</span>
+                             <span class="calendar__item">23</span>
+                             <span class="calendar__item">24</span>
+                             <span class="calendar__item">25</span>
+                             <span class="calendar__item">26</span>
+                             <span class="calendar__item">27</span>
+                             <span class="calendar__item">28</span>
+                             <span class="calendar__item">29</span>
+                             <span class="calendar__item">30</span>
+                             <span class="calendar__item">31</span>
+                         </div>
+                        </div>
+                         </div>
+                  </div>
+                  <div class="buttons_group">
+                     <button  id="html-tab" class="button_switch --underlined"> HTML</button>
+                     <button  id="css-tab" class="button_switch"> CSS</button>
+                  </div>
+                  <div class="text" id="html-text">
+                     <pre> <code>
+    &lt;div class=&quot;card preview__card card--noShadow&quot;&gt;
+    &lt;div class=&quot;tooltip &quot;&gt;
+        &lt;svg class=&quot;tooltip__trigger&quot; width=&quot;24&quot; 
+        height=&quot;24&quot; viewBox=&quot;0 0 24 24&quot; 
+        fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
+        &lt;/svg&gt;
+        &lt;div class=&quot;tooltip__bubble&quot;&gt;Tooltip&lt;/div&gt;
+    &lt;/div&gt;
+    /div&gt;
+                        </code></pre>
+                  </div>
+                  <div class="text  data-open" id="css-text">
+                     <pre> <code>
+.tooltip{
+    display:inline-block;
+    position: relative;
+}
+.tooltip__bubble{
+    position:absolute;
+    
+    padding:10px 20px;
+    border:1px solid black;
+    border-radius: 10px;
+    background-color:dimgrey;
+    color:white;
+    
+    top:calc(100% + 2px);
+    left:50%;
+    transform: translateX(-50%);
+
+    display: none;
+}
+
+.tooltip__bubble::before{
+    content:'';
+    border:8px solid transparent ;
+    border-bottom:6px solid black;
+    left:50%;
+    transform: translateX(-50%);
+    bottom:100%;
+    
+    position:absolute;
+}
+.tooltip__trigger:hover + .tooltip__bubble{
+    display:block;
+}
+                        </code></pre>
+                  </div>
+               </div>
+            </div>
+         </main>
+       
+      </div>
+   </body>
+</html>

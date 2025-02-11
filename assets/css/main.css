@@ -11,6 +11,8 @@
 @import "/components/page/cards/pictures.css";
 @import "/components/page/cards/form.css";
 @import "/components/page/cards/tabs.css";
+@import "/components/page/pages_css/sidebar.css";
+@import "/components/page/pages_css/page.css";
 body{
     font-family:'Roboto', sans-serif;
     margin:0;

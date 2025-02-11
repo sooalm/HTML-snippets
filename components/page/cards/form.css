@@ -6,14 +6,16 @@
     display:flex;
     flex-direction: row;
     gap:2em;
-
-    /* border: 1px solid grey; */
     width:250px;
     justify-content: center;
-   
+}
+.flex__container{
+    display:flex;
+    flex-direction: column;
+    gap:1em;
 }
 @media(max-width:600px){
     .container__form{
-        transform: scale(0.5); 
+        transform: scale(0.6); 
     }
 }

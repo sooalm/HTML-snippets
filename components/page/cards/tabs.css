@@ -1,29 +1,22 @@
 
-
-.tabs__items{
-    display:flex;
-    gap:10px;
-}
 .tab{
    position: absolute;
-   /* left:1vw; */
      opacity: 0;
     left:-100vw;
 }
 
-.preview__inner{
+
+.preview__inner--none{
     display: none;
     }
-    input[id="#all-tab"]:checked ~ .preview__inner{
+    input[id="#all-tab"]:checked ~ .preview__inner--none{
         display:flex;
-        /* background-color: var(--main-element-color); */
     }
     
     .preview__inner__elements{
         display: none;
         }
         input[id="#elements-tab"]:checked ~ .preview__inner__elements{
-            /* justify-self: center;  */
             display:flex;
             flex-wrap:wrap;
             gap:30px;
@@ -32,7 +25,6 @@
             display: none;
             }
             input[id="#containers-tab"]:checked ~ .preview__inner__containers{
-                /* justify-self: center;  */
                 display:flex;
                 flex-wrap:wrap;
                 gap:30px;
@@ -42,9 +34,38 @@
             display: none;
             }
             input[id="#templates-tab"]:checked ~ .preview__inner__templates{
-                /* justify-self: center;  */
                 display:flex;
                 flex-wrap:wrap;
                 gap:30px;
             }
            
+
+
+
+
+/* .text[data-open]{
+position:fixed;
+top:15em;
+transform: translateX(-200em);
+transition:transform 0.3s linear; 
+} */
+/* .text--html{
+    display:none;
+}
+.input[id="#html-tab"]:checked  ~ .text--html{
+    display:block;
+}
+.text--css{
+    display:none;
+}
+.input[id="#css-tab"]:checked  ~ .text--css{
+    display:block;
+} */
+ /* .label{
+    padding:0.5em 1.5em 0.5em 1.5em;
+    font-size:1.5em;
+    background: var(--main-element-color);
+ } 
+     .label:has(.tab:checked) span{
+    text-decoration: underline 1.5px black;
+ }*/

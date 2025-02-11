@@ -3,6 +3,7 @@
     background:#e3e4e6;
     flex-grow: 1;
 }
+
 .preview__inner{
     /* margin:0 -15px;*/
     justify-self: center; 
