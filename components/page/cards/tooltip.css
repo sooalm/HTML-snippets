@@ -1,7 +1,7 @@
 
 
 .tooltip__trigger{
-    /* border:5px solid red; */
+
 }
 .tooltip{
     display:inline-block;
@@ -11,7 +11,7 @@
     position:absolute;
     
     padding:10px 20px;
-    border:1px solid black;
+    border:1px solid var(--white-black);
     border-radius: 10px;
     background-color:dimgrey;
     color:white;

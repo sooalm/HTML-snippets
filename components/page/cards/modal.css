@@ -8,18 +8,12 @@
 } */
 
 .modal{
-   
-    background-color: rgb(188, 185, 185);
-  
+    background-color: var(--themeGrayer);
     height:70%;
     width:96%;
-    /* position:absolute; */
-    /* overflow:hidden; */
     display:flex;
     justify-content: center;
     align-items:center;
-    
-    /* display:none; */
 }
 
 .modal__title{
@@ -31,22 +25,10 @@
 .modal__inner{
     width:280px;
     height:210px;
-    
-    background-color:whitesmoke; 
+    background-color:var(--whitesmoke-334D6E); 
     padding:1em;
     padding-left:1em;
     border-radius: 15px;
-    /* background-color:antiquewhite; */
-    /* border:5px solid blue; */
-    
-    /* margin-top:3em;
-    margin-left:1.3em; */
-
-    /* position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); */
-
 }
 .modal button{
     display:none;
@@ -61,7 +43,7 @@
     width: 260px;
     height: 45px;
     border-radius: 8px 0px 0px 0px;
-    border:1px solid #000000;
+    border:1px solid var(--white-black);
 }
 .cross{
     cursor:pointer;

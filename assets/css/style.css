@@ -23,3 +23,9 @@
 .main { 
     background-color:var(--main-element-color);
 }
+.svg__theme{
+    color: var(--svgTheme);
+}
+.svg__checkbox{
+    color: var(--main-element-color);
+}

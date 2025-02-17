@@ -53,12 +53,9 @@
 .text{
         border:2px solid gray;
         box-shadow: inset 2px 2px 2px 0px gray;;
-       
         max-width: 60em;
         max-height:20em;
-      
         margin: 2em 2em;
-
         overflow: auto;
         overflow-y: auto;
         margin-left:1em;
@@ -69,14 +66,11 @@
         opacity: 0;
         left:-100vw;
         position:fixed;
-        border:2px black solid;
+        border:2px var(--white-black) solid;
      }
       .--move_Left_20per{
         margin-left:20%;
       }
-      /* .--scale0_75{
-        transform: scale(0.75);
-    } */
       .cross--page{
         left:115%;
         top:5%;
@@ -91,7 +85,6 @@
 
     }
 @media (max-width:980px){
-    
     .--scale0_75{
         transform: scale(0.75);
     }

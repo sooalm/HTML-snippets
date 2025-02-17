@@ -51,4 +51,31 @@ if(sideButt){
 }
 
 
+const toggle__ball = document.getElementById("toggle__ball");
+const toggle = document.getElementById("toggle");
+
+if(toggle__ball){
+    toggle.addEventListener('click',function(){ console.log("worked");
+       if(toggle){
+          toggle__ball.classList.toggle('toggle__ball--move');
+        //   toggle.classList.toggle('sidebar__button--white');
+      }
+    })
+}
+
+const theme = document.querySelector('html');
+const buttonTheme = document.getElementById("themeButton");
+
+if(theme){
+    buttonTheme.addEventListener('click',function(){ 
+        if(buttonTheme){
+            if(!theme.hasAttribute("theme"))
+            theme.setAttribute("theme","dark");
+            else theme.removeAttribute("theme");
+        }
+        //     theme.setAttribute("theme","dark");
+        // }else theme.removeAttribute("theme");
+    })
+}
+
 }

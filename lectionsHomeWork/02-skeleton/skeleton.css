@@ -1,60 +1,65 @@
 .skeleton{
-/* position: absolute; */
-width: 579px;
-height: 192px;
-/* left: 536px;*/
-top: 5074px; 
-border:2px solid rgb(0, 0, 0);
-border-radius: 15px;
-/* background-color:rgb(170, 156, 234); */
-background-color:#b4b2b2; 
-overflow: hidden;
+    width: 579px;
+    height: 192px;
+    top: 5074px; 
+    border:2px solid rgb(0, 0, 0);
+    border-radius: 15px;
+    background-color:#b4b2b2; 
+    overflow: hidden;
+
 }
-
 .container{
-height:130px;
-width:515px;
-
-display:flex;
-/* flex-direction: column; */
-flex-wrap:wrap;
-/* background:red; */
-
+    height:130px;
+    width:515px;
+    display:flex;
+    flex-wrap:wrap;
 }
 .avatar{
-width:64px;
-height:64px;
-
-/* position:absolute; */
-margin:10px 20px;
-
-border:1px solid black;
-border-radius:50%;
-background:  linear-gradient(92.51deg, #DDE2E5 6.44%, #E2E6E8 38.47%, #F3F5F5 56.48%, #E3E7EA 77.5%, #DDE2E5 102.52%);
+    position:absolute;
+    width:64px;
+    height:64px;
+    margin:10px 20px;
+    border:1px solid black;
+    border-radius:50%;
+    background:  linear-gradient(92.51deg, #DDE2E5 6.44%, #E2E6E8 38.47%, #F3F5F5 56.48%, #E3E7EA 77.5%, #DDE2E5 102.52%);
+    opacity:0.7;
+    animation:skeleton-loading 1s linear infinite alternate;
 }
-
+@keyframes skeleton-loading{
+    0% {
+		background: hsl(0, 0%, 100%);
+        /* background:  linear-gradient(92.51deg, #DDE2E5 6.44%, #E2E6E8 38.47%, #F3F5F5 56.48%, #E3E7EA 77.5%, #DDE2E5 102.52%); */
+	}
+	
+	100% {
+		/* background-color: hsl(0, 0%, 41%); */
+        background:  hsl(0, 0%, 71%);
+	}
+}
 .gradient{
-height: 20px;
-background:  linear-gradient(92.51deg, #DDE2E5 6.44%, #E2E6E8 38.47%, #F3F5F5 56.48%, #E3E7EA 77.5%, #DDE2E5 102.52%);
-margin-left:20px;
-margin-top:auto;
+    height: 20px;
+    background:  linear-gradient(92.51deg, #DDE2E5 6.44%, #E2E6E8 38.47%, #F3F5F5 56.48%, #E3E7EA 77.5%, #DDE2E5 102.52%);
+    margin-left:20px;
+    margin-top:auto;
+    border-radius:.125rem;
+    opacity:0.7;
+    animation:skeleton-loading 1s linear infinite alternate;
 }
-.gradient--name{
+.gradient__name{
     width: 172px;
-   
     margin-left:100px;
     margin-top:10px;
 }
-.gradient--description{
+.gradient__description{
     width: 257px;
     margin-left:100px;
     margin-top:10px;
 }
-.gradient--title{
+.gradient__title{
     width: 515px;
     margin-top:30px;
 }
-.gradient--about{
+.gradient__about{
     width: 475px; 
     margin-top:10px;
 }

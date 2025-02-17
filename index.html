@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-<html>
-
+<html >
+    <script src="/components/page/pages_js/buttonForPages.js"></script>
 <head>
     <meta charset="utf-8">
     <title>Это тестовая страница</title>
@@ -9,71 +9,74 @@
 </head>
 <body>
     <div class="page">
-        <!-- ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
-        <header class="header">
-            <div class="container"> 
+  <header class="header">
+            <div class="container "> 
+                <div class="container--spaceBetween">
+                
                 <div class="header_svg">
                     <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect width="30" height="30" fill="#212429"/>
+                        <rect class="svg__theme" width="30" height="30" fill="currentColor"/>
                         </svg>
                         <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <rect width="32" height="32" rx="16" fill="#212429"/>
+                            <rect class="svg__theme" width="32" height="32" rx="16" fill="currentColor"/>
                             </svg>
                             <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M0 0L32 32H0V0Z" fill="#212429"/>
+                                <path class="svg__theme" d="M0 0L32 32H0V0Z" fill="currentColor"/>
                                 </svg>
-                </div>                                                      
+                </div>   
+                <div class="toggle__flex_container">  
+                <label  class="toggle">
+                    <input class ="toggle__input" type="checkbox" >
+                    <div class="toggle__state" id="themeButton">
+                        <div class="toggle__control toggle__control--hasSvg">
+                            <svg class="toggle__icon" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect   width="22" height="22" fill="white"/>
+                                </svg>
+                            </div>             
+                    </div>
+                </label>  
+                <div id="toggle" class="toggle toggle--rightSide">
+                        <div class="toggle__control">
+                        <div id="toggle__ball" class="toggle__ball"></div>
+                        </div>
+                    </div>  
+                </div>  
+            </div> 
+                <div class="header__tabs">                                          
                 <h1 class="h">Reusable component library</h1>
-             <!-- </div>  -->
-             <!-- <nav class="nav">
-                    <a href="" class="a">All components</a>    
-                    <a class="a">Elements</a>
-                    <a class="a">Containers</a>
-                    <a class="a">Templates</a>
-             </nav> -->
-            <!-- <div class="tabs"> -->
-               
-                    <!-- <input type="radio" id="#all-tab" class="" name="tab"  checked> -->
-                    <!-- <input type="radio" id="#elements-tab" class="" name="tab"> -->
-                    <!-- <input type="radio" id="#containers-tab" class="" name="tab"> -->
-                    <!-- <input type="radio" id="#templates-tab" class="" name="tab"> -->
-              
-                <!-- <div class="tabs__scroller"> -->
                   <label for="#all-tab" class="">All components</label>
                   <label for="#elements-tab" class="">Elements</label>
                   <label for="#containers-tab" class="">Containers</label>
                   <label for="#templates-tab" class="">Templates</label>
-                <!-- </div>
-            </div> -->
-    </div> 
+                </div>   
+                
         </header>
-<!-- ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
-
         <main class="page__main">
             <div class="preview">
                 <div class="container">
                     <input type="radio" id="#all-tab" class="tab" name="tab"  checked>
                     <div class="preview__inner preview__inner--none">
-                        <div class="card preview__card">
+                        <div class="card card--colorTheme preview__card">
                             <div class="tooltip ">
                                 <svg class="tooltip__trigger" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3ZM1 12C1 5.92487 5.92487 1 12 1C18.0751 1 23 5.92487 23 12C23 18.0751 18.0751 23 12 23C5.92487 23 1 18.0751 1 12Z" fill="#212429"/>
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12.2582 8.02428C11.7927 7.94443 11.314 8.03191 10.9068 8.27123C10.4996 8.51054 10.1902 8.88625 10.0335 9.3318C9.85018 9.85279 9.27926 10.1266 8.75827 9.9433C8.23728 9.76002 7.96351 9.18911 8.14678 8.66812C8.46025 7.77701 9.07898 7.02559 9.89339 6.54696C10.7078 6.06833 11.6653 5.89337 12.5964 6.05307C13.5274 6.21277 14.3719 6.69682 14.9802 7.41949C15.5884 8.14201 15.9214 9.05644 15.9201 10.0009C15.9197 11.5312 14.7851 12.5419 13.9748 13.082C13.5392 13.3724 13.1107 13.586 12.795 13.7263C12.6358 13.7971 12.5016 13.8508 12.405 13.8876C12.3566 13.906 12.3174 13.9203 12.2888 13.9305L12.2541 13.9426L12.243 13.9464L12.2391 13.9477L12.2376 13.9482C12.2373 13.9483 12.2363 13.9486 11.9201 13L12.2363 13.9486C11.7124 14.1233 11.1461 13.8401 10.9714 13.3162C10.7969 12.7926 11.0796 12.2267 11.6028 12.0516L11.6016 12.0521C11.6017 12.052 11.6018 12.052 11.6028 12.0516L11.6188 12.046C11.6342 12.0406 11.6594 12.0314 11.693 12.0186C11.7605 11.9929 11.8607 11.9529 11.9827 11.8986C12.2296 11.7889 12.551 11.6275 12.8654 11.4179C13.555 10.9582 13.9201 10.4691 13.9201 9.99996L13.9201 9.99847C13.9208 9.52615 13.7543 9.06883 13.4502 8.70749C13.146 8.34615 12.7238 8.10413 12.2582 8.02428Z" fill="#212429"/>
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12 15C12.5523 15 13 15.4477 13 16V16.5C13 17.0523 12.5523 17.5 12 17.5C11.4477 17.5 11 17.0523 11 16.5V16C11 15.4477 11.4477 15 12 15Z" fill="#212429"/>
+                                    <path class="svg__theme" fill-rule="evenodd" clip-rule="evenodd" d="M12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3ZM1 12C1 5.92487 5.92487 1 12 1C18.0751 1 23 5.92487 23 12C23 18.0751 18.0751 23 12 23C5.92487 23 1 18.0751 1 12Z" fill="currentColor"/>
+                                    <path class="svg__theme" fill-rule="evenodd" clip-rule="evenodd" d="M12.2582 8.02428C11.7927 7.94443 11.314 8.03191 10.9068 8.27123C10.4996 8.51054 10.1902 8.88625 10.0335 9.3318C9.85018 9.85279 9.27926 10.1266 8.75827 9.9433C8.23728 9.76002 7.96351 9.18911 8.14678 8.66812C8.46025 7.77701 9.07898 7.02559 9.89339 6.54696C10.7078 6.06833 11.6653 5.89337 12.5964 6.05307C13.5274 6.21277 14.3719 6.69682 14.9802 7.41949C15.5884 8.14201 15.9214 9.05644 15.9201 10.0009C15.9197 11.5312 14.7851 12.5419 13.9748 13.082C13.5392 13.3724 13.1107 13.586 12.795 13.7263C12.6358 13.7971 12.5016 13.8508 12.405 13.8876C12.3566 13.906 12.3174 13.9203 12.2888 13.9305L12.2541 13.9426L12.243 13.9464L12.2391 13.9477L12.2376 13.9482C12.2373 13.9483 12.2363 13.9486 11.9201 13L12.2363 13.9486C11.7124 14.1233 11.1461 13.8401 10.9714 13.3162C10.7969 12.7926 11.0796 12.2267 11.6028 12.0516L11.6016 12.0521C11.6017 12.052 11.6018 12.052 11.6028 12.0516L11.6188 12.046C11.6342 12.0406 11.6594 12.0314 11.693 12.0186C11.7605 11.9929 11.8607 11.9529 11.9827 11.8986C12.2296 11.7889 12.551 11.6275 12.8654 11.4179C13.555 10.9582 13.9201 10.4691 13.9201 9.99996L13.9201 9.99847C13.9208 9.52615 13.7543 9.06883 13.4502 8.70749C13.146 8.34615 12.7238 8.10413 12.2582 8.02428Z" fill="currentColor"/>
+                                    <path class="svg__theme" fill-rule="evenodd" clip-rule="evenodd" d="M12 15C12.5523 15 13 15.4477 13 16V16.5C13 17.0523 12.5523 17.5 12 17.5C11.4477 17.5 11 17.0523 11 16.5V16C11 15.4477 11.4477 15 12 15Z" fill="currentColor"/>
                                 </svg>
                                 <div class="tooltip__bubble">Tooltip</div>
                             </div>
                             <div class="card__description"><a class="card__a" href="/components/page/pages/Tooltip_page.html"><b>Tooltip</b><br>Container</a> </div> 
                         </div>
-                        <div class="card preview__card">  
+                        <div class="card card--colorTheme preview__card">  
                             <div class="container__form">
                                         <div class="flex__container">
                                             <label class="checkbox">
                                                 <input class ="checkbox__input" type="checkbox" >
                                                 <div class="checkbox__state">
                                                     <div class="checkbox__control">
+                                                        <div class="grayBoundAnimate"></div>
                                                         <svg class="checkbox__icon" width="15" height="13" viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                            <path d="M1.5 7.5L5 11L13 2" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            <path class="svg__checkbox" d="M1.5 7.5L5 11L13 2" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
                                                             </svg>
                                                             
                                                         </div>
@@ -85,8 +88,9 @@
                                                 <input class ="checkbox__input" type="checkbox" checked>
                                                 <div class="checkbox__state">
                                                     <div class="checkbox__control">
+                                                        <div class="grayBoundAnimate"></div>
                                                         <svg class="checkbox__icon" width="15" height="13" viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                            <path d="M1.5 7.5L5 11L13 2" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            <path class="svg__checkbox" d="M1.5 7.5L5 11L13 2"  stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
                                                             </svg>
                                                             
                                                         </div>
@@ -99,7 +103,7 @@
                                                 <div class="checkbox__state">
                                                     <div class="checkbox__control">
                                                         <svg class="checkbox__icon" width="15" height="13" viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                            <path fill="currentColor d="M1.5 7.5L5 11L13 2" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            <path  fill="currentColor" d="M1.5 7.5L5 11L13 2" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
                                                             </svg>
                                                             
                                                         </div>
@@ -107,14 +111,13 @@
                                                 </div>
                                             </label>
                                             </div>
-                                            <!-- /////////////////////////////////////////////////////////////////////////////////////////////// -->
-                                        <div class="flex__container">
+                                            <div class="flex__container">
                                             <label class="radio">
                                                 <input class ="radio__input" type="radio" name="radio">
                                                 <div class="radio__state">
                                                     <div class="radio__control">
-                                                        <svg class="radio__icon" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                            <rect width="18" height="18" rx="9" fill="currentColor"/>
+                                                        <svg class="radio__icon " width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <rect   width="18" height="18" rx="9" fill="currentColor"/>
                                                             </svg>  
                                                         </div>
                                                         <div class="radio__title">Default</div>
@@ -122,11 +125,11 @@
                                             </label>
                                             
                                             <label class="radio">
-                                                <input class ="radio__input" type="radio" name="radio" checked>
+                                                <input checked class ="radio__input" type="radio" name="radio" >
                                                 <div class="radio__state">
                                                     <div class="radio__control">
-                                                        <svg class="radio__icon" width="18" height="18" viewBox="0 0 18 18" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                                            <rect width="18" height="18" rx="9" fill="currentColor"//>
+                                                        <svg class="radio__icon " width="18" height="18" viewBox="0 0 18 18"  xmlns="http://www.w3.org/2000/svg">
+                                                            <rect width="18" height="18" rx="9" fill="currentColor"/>
                                                             </svg>  
                                                         </div>
                                                         <div class="radio__title">Selected</div>
@@ -138,19 +141,16 @@
                                                 <div class="radio__state">
                                                     <div class="radio__control">
                                                         <svg class="radio__icon" width="18" height="18" viewBox="0 0 18 18" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                                            <rect width="18" height="18" rx="9" fill="currentColor"//>
+                                                            <rect width="18" height="18" rx="9" fill="currentColor"/>
                                                             </svg>  
                                                         </div>
                                                         <div class="radio__title">Disabled</div>
                                                 </div>
                                             </label>
-                                        </div>
-                                        <!-- /////////////////////////////////////////////////////////////////////////////////////////////// -->
-                                       
+                                        </div>       
                             </div>
-                      
                             <div class="card__description"><a class="card__a" href="/components/page/pages/CustomFE_page.html"><b>Custom form Elements</b><br>Container</a> </div> </div>
-                        <div class="card preview__card">
+                        <div class="card card--colorTheme preview__card">
                             <div class="calendar ">
                                 <div class="calendar__title">October 2019</div>
                                 <div class="calendar__wrapper">
@@ -205,7 +205,7 @@
                                  </div>
                              <div class="card__description"><a class="card__a" href="/components/page/pages/Calendar_page.html" ><b>Calendar</b><br>Container</a> </div> 
                         </div>
-                        <div class="card preview__card">
+                        <div class="card card--colorTheme preview__card">
                             <div  class="modal ">
                                 <div id="modal" class="modal__inner ">
                                         <svg class="cross" id="modal-close">
@@ -226,7 +226,7 @@
                             </div>
                             <div class="card__description"><a class="card__a" href="/components/page/pages/Modal_page.html" ><b>Modal</b><br>Container</a> </div> 
                         </div>
-                        <div class="card preview__card">
+                        <div class="card card--colorTheme preview__card">
                             <div class="histogram ">
                                 <div class="span_block">
                                     <span>Total orders</span><br>
@@ -255,7 +255,7 @@
                                     </div>
                             </div> <div class="card__description"><a class="card__a" href="/components/page/pages/Histogram_page.html" ><b>Histogram</b><br>Container</a> </div> 
                         </div>
-                        <div class="card preview__card">
+                        <div class="card card--colorTheme preview__card">
                             <div class="div__image">
                                 <img class="img" src="/assets/images/forest_400.jpg" alt="Картинка"
                                 srcset="/assets/images/avatar.png 160w"
@@ -263,10 +263,9 @@
                                </div>   <div class="card__description"><a class="card__a" href="/components/page/pages/Avatar_page.html" ><b>Avatar</b><br>Container</a> </div> 
                         </div>
                      </div>
-                   
                     <input type="radio" id="#elements-tab" class="tab" name="tab">
                     <div class=" preview__inner__elements">
-                        <div class="card preview__card">  
+                        <div class="card card--colorTheme preview__card">  
                             <div class="container__form">
                                         <div class="flex__container">
                                             <label class="checkbox">
@@ -276,7 +275,6 @@
                                                         <svg class="checkbox__icon" width="15" height="13" viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                             <path d="M1.5 7.5L5 11L13 2" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
                                                             </svg>
-                                                            
                                                         </div>
                                                         <div class="checkbox__title">Default</div>
                                                 </div>
@@ -351,13 +349,13 @@
                     </div>
                     <input type="radio" id="#containers-tab" class="tab" name="tab">
                     <div class="preview__inner__containers">
-                        <div class="card preview__card"> </div>
-                        <div class="card preview__card"> </div>
-                        <div class="card preview__card"> </div>
+                        <div class="card card--colorTheme preview__card"> </div>
+                        <div class="card card--colorTheme preview__card"> </div>
+                        <div class="card card--colorTheme preview__card"> </div>
                     </div>
                     <input type="radio" id="#templates-tab" class="tab" name="tab">
                     <div class="preview__inner__templates">
-                        <div class="card preview__card">
+                        <div class="card card--colorTheme preview__card">
                             <div class="histogram ">
                                 <div class="span_block">
                                     <span>Total orders</span><br>
@@ -386,7 +384,7 @@
                                     </div>
                             </div> <div class="card__description"><p ><b>Histogram</b><br>Container</p> </div> 
                         </div>
-                        <div class="card preview__card">
+                        <div class="card card--colorTheme preview__card">
                             <div class="div__image">
                                 <img class="img" src="/assets/images/forest_400.jpg" alt="Картинка"
                                 srcset="/assets/images/avatar.png 160w"
@@ -404,5 +402,4 @@
         </footer>
     </div>
 </body>
-
 </html>

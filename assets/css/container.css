@@ -2,7 +2,11 @@
     max-width:1110px;
     margin:0 auto;
 }
-
+.container--spaceBetween{
+    display:flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
 @media (max-width:1200px){
     .container{
         max-width:1200px;

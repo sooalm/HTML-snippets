@@ -38,34 +38,3 @@
                 flex-wrap:wrap;
                 gap:30px;
             }
-           
-
-
-
-
-/* .text[data-open]{
-position:fixed;
-top:15em;
-transform: translateX(-200em);
-transition:transform 0.3s linear; 
-} */
-/* .text--html{
-    display:none;
-}
-.input[id="#html-tab"]:checked  ~ .text--html{
-    display:block;
-}
-.text--css{
-    display:none;
-}
-.input[id="#css-tab"]:checked  ~ .text--css{
-    display:block;
-} */
- /* .label{
-    padding:0.5em 1.5em 0.5em 1.5em;
-    font-size:1.5em;
-    background: var(--main-element-color);
- } 
-     .label:has(.tab:checked) span{
-    text-decoration: underline 1.5px black;
- }*/

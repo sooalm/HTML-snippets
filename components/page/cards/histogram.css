@@ -4,7 +4,7 @@
     height: 165px;
     /* left: 536px;
     top: 4657px; */
-    border:1px solid #ACB5BD;
+    border:1px solid var(--white-black);
     background: var(--main-element-color);
     border-radius: 15px;
 
@@ -22,6 +22,7 @@
 .span_block{
     position:absolute;
     margin-left:0.8em;
+    color:var(--text-color);
 }
 .span_block_1{
     position:absolute;
@@ -30,7 +31,7 @@
 }
 .miniRectangles{
     width:9px;
-    background-color: blue;
+    background-color: var(--blue-filler-button);
 }
 .rectangle_min{
     height:11px;

@@ -4,6 +4,9 @@
 @import "page.css";
 @import "container.css";
 @import "preview.css";
+@import "/components/my-component/radio.css";
+@import "/components/my-component/checkbox.css";
+@import "/components/my-component/toggle.css";
 @import "/components/page/cards/tooltip.css";
 @import "/components/page/cards/calendar.css";
 @import "/components/page/cards/histogram.css";
@@ -20,7 +23,34 @@ body{
 
 html, body{
     height:100%;
+    color:var(--text-color)
 }
-:root {
+ 
+html{
     --main-element-color:#FFFFFF;
+    --preview-bg:#e3e4e6;
+    --text-color:black;
+    --white-black:white;
+    --blue-filler-button:#4263eb;
+    /* --stroke-color:white; */
+    --svgTheme:#212429;
+    --whitesmoke-334D6E:whitesmoke;
+    --themeGrayer:gray;
   }
+  html[theme="dark"]{
+    --main-element-color:#222121;
+    --preview-bg:#575757;
+    --text-color:#334D6E;
+    --white-black:#334D6E;
+    --blue-filler-button:#334D6E;
+    /* --stroke-color:black; */
+    --svgTheme:#334D6E;
+    --whitesmoke-334D6E:#334D6E;/* modal */
+    --themeGrayer:rgb(70, 70, 70);
+    
+  }
+
+
+:root {
+    /* --main-element-color:#FFFFFF; */
+}
