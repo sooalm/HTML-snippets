@@ -24,8 +24,14 @@
 .radio__icon {
     /* color:var(--white-black); */
      color: var(--main-element-color);  
-    
 }
+
+/* .radio__substitute{
+    width:18px;
+    height:18px;
+    border-radius:100%;
+    background-color:var(--main-element-color);
+} */
 
 .radio__title{
     color:var(--text-color);
@@ -35,10 +41,10 @@
     font-weight:400;
     line-height:24px;
 }
-.radio__input:checked ~ .radio__state .radio__control .radio__icon {
-    color:var(--blue-filler-button) ;
-   
+.radio .radio__input:checked ~ .radio__state .radio__control .radio__icon {
+    color:var(--blue-filler-button) ;  
 }
+
 /* .radio:not(:has(.radio__input:checked)) .radio__icon{
     color:var(--blue-filler-button) ;
 } */
